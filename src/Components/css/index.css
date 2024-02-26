@@ -1,0 +1,15 @@
+@import "./fonts.css";
+
+:root {
+  /* Colours */
+  --hero-bg: #1f2937;
+  --cta-bg: #3c82f6;
+  --grey-bg: #e5e7eb;
+  --heading-col: #f9fafb;
+  --font-col: #bdc1c8;
+  --subheading-col: #1f2937;
+}
+
+body {
+  font-family: var(--baseFont);
+}

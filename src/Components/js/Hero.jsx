@@ -1,4 +1,4 @@
-import Navigation from "./Components/js/Navigation";
+import Navigation from "./Navigation";
 function Hero() {
   return (
     <>
