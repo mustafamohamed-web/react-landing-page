@@ -6,13 +6,13 @@ function Navigation() {
           <div className="logo">Header Logo</div>
           <ul className="navigation-links">
             <li>
-              <a href="">header Link one</a>
+              <a href="">About Us</a>
             </li>
             <li>
-              <a href="">header Link Two</a>
+              <a href="">Services</a>
             </li>
             <li>
-              <a href="">header Link Three</a>
+              <a href="">Contact</a>
             </li>
           </ul>
         </nav>
