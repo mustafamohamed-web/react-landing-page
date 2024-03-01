@@ -1,0 +1,35 @@
+.cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-xl);
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--cta-bg);
+  padding: 3rem;
+  border-radius: var(--spacing-xs);
+}
+
+.cta-info {
+  color: var(--heading-col);
+  /* width: 60%; */
+}
+.cta-heading {
+  font-size: var(--subheading-fs);
+}
+
+.cta-button {
+  align-self: flex-end;
+}
+
+.cta-btn {
+  border: solid 1px white;
+  background-color: var(--cta-bg);
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  color: var(--heading-col);
+  cursor: pointer;
+}

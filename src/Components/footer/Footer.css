@@ -1,0 +1,11 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--hero-bg);
+  padding: var(--spacing-m);
+}
+
+.footer-description {
+  color: var(--heading-col);
+}
