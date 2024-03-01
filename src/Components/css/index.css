@@ -24,7 +24,7 @@
   --spacing-xl: 3rem;
   --spacing-xxl: 7rem;
 
-  --max-width: 1000px;
+  --max-width: 1920px;
   --section-height: 60vh;
 }
 
@@ -41,17 +41,22 @@ body {
   background: transparent;
 }
 
+.app {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
 .main {
-  min-height: var(--section-height);
   background-color: var(--hero-bg);
+  padding: var(--spacing-xl);
 }
 
 /* NAVIGATION */
 
 .navigation-container {
   margin: 0 auto;
-  max-width: var(--max-width);
-  padding: var(--spacing-s);
+  /* max-width: var(--max-width); */
+  /* padding: var(--spacing-s); */
 }
 
 nav {
@@ -89,7 +94,7 @@ nav {
   align-items: center;
   gap: var(--spacing-s);
   max-width: var(--max-width);
-  margin: 4rem auto;
+  padding: var(--spacing-l);
 }
 .hero-information {
   flex: 1;
@@ -129,7 +134,7 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  min-height: var(--section-height);
+  padding: var(--spacing-xl);
 }
 
 .cards-subtitle {
@@ -157,15 +162,14 @@ img {
 /* Information */
 
 .info-container {
-  min-height: var(--section-height);
   background-color: var(--grey-bg);
+  padding: var(--spacing-xl);
 }
 
 .info-quote {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding-top: 10rem;
   max-width: 40%;
 }
 
@@ -186,14 +190,13 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: var(--section-height);
+  padding: var(--spacing-xl);
 }
 
 .cta {
   display: flex;
   justify-content: space-between;
   background-color: var(--cta-bg);
-  min-width: var(--max-width);
   padding: 3rem;
   border-radius: var(--spacing-xs);
 }
@@ -226,9 +229,50 @@ span {
   justify-content: center;
   align-items: center;
   background-color: var(--hero-bg);
-  min-height: 15vh;
+  padding: var(--spacing-m);
 }
 
 .footer-description {
   color: var(--heading-col);
+}
+
+@media screen and (max-width: 750px) {
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-information {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-m);
+  }
+  .hero-btn {
+    align-self: center;
+  }
+
+  .hero-img {
+    width: 300px;
+    padding-bottom: var(--spacing-m);
+  }
+
+  .cards-container {
+    justify-content: flex-start;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .card {
+    padding: var(--spacing-m);
+  }
+  .cards-subtitle {
+    padding: 0;
+  }
+
+  .cta {
+    max-width: 50%;
+    flex-direction: column;
+  }
 }
