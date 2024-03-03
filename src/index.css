@@ -1,0 +1,98 @@
+@import "./fonts.css";
+@import "./Components/cards/Cards.css";
+@import "./Components/hero/Hero.css";
+@import "./Components/information/Information.css";
+@import "./Components/Cta/CTA.css";
+@import "./Components/footer/Footer.css";
+@import "./Components/navigation/Navigation.css";
+
+:root {
+  /* Colours */
+  --hero-bg: #1f2937;
+  --cta-bg: #3c82f6;
+  --grey-bg: #e5e7eb;
+  --heading-col: #f9fafb;
+  --font-col: #bdc1c8;
+  --subheading-col: #1f2937;
+
+  /* Typography */
+  --para-fs: 1rem;
+  --logo-fs: 1.3rem;
+  --subheading-fs: 1.5rem;
+  --heading-fs: 2.5rem;
+  --subheading-fs: 1.5rem;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-s: 1rem;
+  --spacing-m: 1.5rem;
+  --spacing-l: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 7rem;
+
+  --max-width: 1920px;
+  --section-height: 60vh;
+}
+
+body {
+  font-family: var(--baseFont);
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.app {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.main {
+  background-color: var(--hero-bg);
+}
+
+@media screen and (max-width: 750px) {
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-information {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-m);
+  }
+  .hero-btn {
+    align-self: center;
+  }
+
+  .hero-img {
+    width: 300px;
+    padding-bottom: var(--spacing-m);
+  }
+
+  .cards-container {
+    justify-content: flex-start;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .card {
+    padding: var(--spacing-m);
+  }
+  .cards-subtitle {
+    padding: 0;
+  }
+
+  .cta {
+    max-width: 50%;
+    flex-direction: column;
+  }
+}

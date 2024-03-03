@@ -1,10 +1,20 @@
-import "./Components/css/index.css";
-import Hero from "./Components/js/Hero";
+import "./index.css";
+import Hero from "./Components/hero/Hero";
+import Cards from "./Components/cards/Cards";
+import Information from "./Components/information/Information";
+import CTA from "./Components/Cta/CTA";
+import Footer from "./Components/footer/Footer";
 
 function App() {
   return (
     <>
-      <Hero />
+      <div className="app">
+        <Hero />
+        <Cards />
+        <Information />
+        <CTA />
+        <Footer />
+      </div>
     </>
   );
 }

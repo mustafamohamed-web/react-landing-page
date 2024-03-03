@@ -1,0 +1,32 @@
+.navigation-container {
+  margin: 0 auto;
+  /* max-width: var(--max-width); */
+  /* padding: var(--spacing-s); */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: var(--heading-col);
+  font-size: var(--logo-fs);
+  font-weight: bold;
+}
+
+.navigation-links {
+  display: flex;
+  gap: var(--spacing-s);
+  list-style: none;
+  cursor: pointer;
+}
+
+.navigation-links a {
+  text-decoration: none;
+  color: var(--font-col);
+  font-size: var(--para-fs);
+}
+.navigation-links a:hover {
+  color: var(--cta-bg);
+}
