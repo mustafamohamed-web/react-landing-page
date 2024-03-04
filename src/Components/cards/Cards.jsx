@@ -1,4 +1,4 @@
-function Cards() {
+const Cards = () => {
   return (
     <>
       <div className="cards-container">
@@ -40,6 +40,6 @@ function Cards() {
       </div>
     </>
   );
-}
+};
 
 export default Cards;

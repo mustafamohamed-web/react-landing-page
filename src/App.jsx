@@ -1,4 +1,5 @@
 import "./index.css";
+import Navigation from "./Components/navigation/Navigation";
 import Hero from "./Components/hero/Hero";
 import Cards from "./Components/cards/Cards";
 import Information from "./Components/information/Information";
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <div className="app">
+        <Navigation />
         <Hero />
         <Cards />
         <Information />

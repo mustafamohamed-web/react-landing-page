@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: var(--spacing-xl);
+  padding: var(--spacing-xxl);
+  background-color: var(--heading-col);
 }
 
 .cards-subtitle {

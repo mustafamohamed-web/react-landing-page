@@ -1,4 +1,4 @@
-function Information() {
+const Information = () => {
   return (
     <>
       <div className="info-container">
@@ -14,6 +14,6 @@ function Information() {
       </div>
     </>
   );
-}
+};
 
 export default Information;

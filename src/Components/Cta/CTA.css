@@ -1,15 +1,13 @@
 .cta-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: var(--spacing-xl);
+  background-color: var(--heading-col);
 }
 
 .cta {
   display: flex;
   justify-content: space-between;
   background-color: var(--cta-bg);
-  padding: 3rem;
+  padding: var(--spacing-l) var(--spacing-m);
   border-radius: var(--spacing-xs);
 }
 
